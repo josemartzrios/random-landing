@@ -1,0 +1,48 @@
+---
+---
+
+<nav class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="/" class="nav-logo">
+      <span class="logo-optim">Optim</span><span class="logo-ia">IA</span>
+    </a>
+
+    <div class="nav-links">
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#seguridad">Seguridad</a>
+      <a href="#caso">Caso de éxito</a>
+      <a href="#contacto" class="nav-cta">Diagnóstico gratis →</a>
+    </div>
+
+    <button class="nav-hamburger" id="nav-hamburger" aria-label="Abrir menú">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- Mobile menu -->
+<div class="nav-mobile" id="nav-mobile">
+  <button class="nav-mobile-close" id="nav-mobile-close" aria-label="Cerrar menú">✕</button>
+  <a href="#como-funciona" class="nav-mobile-link">Cómo funciona</a>
+  <a href="#servicios" class="nav-mobile-link">Servicios</a>
+  <a href="#seguridad" class="nav-mobile-link">Seguridad</a>
+  <a href="#caso" class="nav-mobile-link">Caso de éxito</a>
+  <a href="#contacto" class="btn btn-primary">Diagnóstico gratis →</a>
+</div>
+
+<script>
+  const hamburger = document.getElementById('nav-hamburger');
+  const mobileMenu = document.getElementById('nav-mobile');
+  const closeBtn   = document.getElementById('nav-mobile-close');
+  const mobileLinks = document.querySelectorAll('.nav-mobile-link');
+
+  function openMenu()  { mobileMenu?.classList.add('open'); document.body.style.overflow = 'hidden'; }
+  function closeMenu() { mobileMenu?.classList.remove('open'); document.body.style.overflow = ''; }
+
+  hamburger?.addEventListener('click', openMenu);
+  closeBtn?.addEventListener('click', closeMenu);
+  mobileLinks.forEach(link => link.addEventListener('click', closeMenu));
+</script>
