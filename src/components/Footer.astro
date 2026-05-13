@@ -1,4 +1,5 @@
 ---
+import { SITE } from '../config/site';
 ---
 
 <footer class="footer">
@@ -19,13 +20,13 @@
     </div>
 
     <div class="footer-contact">
-      <p>hola@optimia.com</p>
+      <p>{SITE.email}</p>
       <p>Culiacán, Sinaloa, México</p>
     </div>
   </div>
 
   <div class="footer-bottom">
     <p class="text-small">© 2026 OptimIA</p>
-    <p class="text-small"><a href="#">Aviso de privacidad</a></p>
+    <p class="text-small"><a href="/aviso-de-privacidad">Aviso de privacidad</a></p>
   </div>
 </footer>

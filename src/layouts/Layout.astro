@@ -1,5 +1,6 @@
 ---
 import '../styles/global.css';
+import { SITE } from '../config/site';
 
 interface Props {
   title?: string;
@@ -27,7 +28,7 @@ const {
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:image" content="/og-image.png" />
-    <meta property="og:url" content="https://optimia.com" />
+    <meta property="og:url" content={SITE.url} />
     <meta property="og:type" content="website" />
 
     <!-- Twitter -->
@@ -47,21 +48,19 @@ const {
     />
 
     <!-- Structured data -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "OptimIA",
-        "url": "https://optimia.com",
-        "description": "Consultoría de optimización operativa con IA para PyMEs en LATAM",
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Culiacán",
-          "addressRegion": "Sinaloa",
-          "addressCountry": "MX"
-        }
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "OptimIA",
+      "url": SITE.url,
+      "description": "Consultoría de optimización operativa con IA para PyMEs en LATAM",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Culiacán",
+        "addressRegion": "Sinaloa",
+        "addressCountry": "MX"
       }
-    </script>
+    })} />
   </head>
   <body>
     <slot />

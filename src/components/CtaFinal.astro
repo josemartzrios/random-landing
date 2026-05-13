@@ -1,4 +1,5 @@
 ---
+import { SITE } from '../config/site';
 ---
 
 <section class="section-cta" id="contacto">
@@ -8,11 +9,11 @@
       Agenda una sesión de diagnóstico gratuita de 30 minutos.
       Sin compromiso. Te decimos exactamente dónde estás perdiendo tiempo y dinero.
     </p>
-    <a href="https://cal.com/optimia/diagnostico" class="btn btn-primary btn-lg" target="_blank" rel="noopener">
+    <a href={SITE.calUrl} class="btn btn-primary btn-lg" target="_blank" rel="noopener">
       Agendar diagnóstico gratuito →
     </a>
     <p class="text-small">
-      O escríbenos: <a href="mailto:hola@optimia.com">hola@optimia.com</a>
+      O escríbenos: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
     </p>
   </div>
 </section>
