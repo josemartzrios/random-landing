@@ -7,7 +7,7 @@
 
 ## Contexto
 
-OptimIA es una consultoría de optimización operativa con IA para PyMEs en LATAM, con sede en Culiacán, Sinaloa, México. La landing page no tiene formularios propios; los datos se recaban cuando el usuario escribe a hola@optimia.com o agenda una sesión vía Cal.com. Resend se usa como plataforma de envío de correos transaccionales/respuestas.
+OptimIA es una consultoría de optimización operativa con IA para PyMEs en LATAM, con sede en Culiacán, Sinaloa, México. La landing page no tiene formularios propios; los datos se recaban cuando el usuario escribe a hola@optimia.mx o agenda una sesión vía Cal.com. Resend se usa como plataforma de envío de correos transaccionales/respuestas.
 
 La empresa no está formalmente constituida, por lo que el responsable se identifica como "OptimIA".
 
@@ -26,11 +26,11 @@ La empresa no está formalmente constituida, por lo que el responsable se identi
 
 ### 1. Identidad del Responsable
 - **Nombre:** OptimIA
-- **Correo:** hola@optimia.com
+- **Correo:** hola@optimia.mx
 - **Domicilio:** Culiacán, Sinaloa, México
 
 ### 2. Datos personales que se recaban
-Los que el usuario proporciona voluntariamente al escribir a hola@optimia.com o al agendar una sesión en Cal.com:
+Los que el usuario proporciona voluntariamente al escribir a hola@optimia.mx o al agendar una sesión en Cal.com:
 - Nombre
 - Correo electrónico
 - Nombre de empresa (opcional, vía Cal.com)
@@ -46,7 +46,7 @@ No se recaban datos sensibles.
 **Secundarias (opcionales):**
 - Enviar información sobre servicios y novedades de OptimIA
 
-El titular puede oponerse a las finalidades secundarias en cualquier momento escribiendo a hola@optimia.com.
+El titular puede oponerse a las finalidades secundarias en cualquier momento escribiendo a hola@optimia.mx.
 
 ### 4. Transferencias de datos
 Los datos son tratados por los siguientes encargados, bajo instrucciones de OptimIA y sin fines propios:
@@ -57,7 +57,7 @@ Los datos son tratados por los siguientes encargados, bajo instrucciones de Opti
 No se realizan transferencias a terceros con fines propios.
 
 ### 5. Derechos ARCO
-El titular puede ejercer sus derechos de **Acceso, Rectificación, Cancelación y Oposición** enviando un correo a hola@optimia.com con:
+El titular puede ejercer sus derechos de **Acceso, Rectificación, Cancelación y Oposición** enviando un correo a hola@optimia.mx con:
 - Nombre completo
 - Descripción del derecho que desea ejercer
 
