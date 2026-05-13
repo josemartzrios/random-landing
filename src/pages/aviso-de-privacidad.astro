@@ -1,0 +1,185 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
+import { SITE } from '../config/site';
+---
+
+<Layout
+  title="Aviso de Privacidad — OptimIA"
+  description="Aviso de privacidad de OptimIA conforme a la Ley Federal de Protección de Datos Personales en Posesión de los Particulares (LFPDPPP)."
+>
+  <Nav />
+  <main class="privacy-page">
+    <div class="privacy-container">
+      <a href="/" class="privacy-back text-small">← Volver al inicio</a>
+
+      <article class="privacy-content">
+        <h1 class="privacy-title">Aviso de Privacidad</h1>
+        <p class="privacy-meta text-small">Última actualización: 13 de mayo de 2026</p>
+
+        <section class="privacy-section">
+          <h2>1. Identidad del Responsable</h2>
+          <p>
+            El responsable del tratamiento de sus datos personales es <strong>OptimIA</strong>,
+            con domicilio en Culiacán, Sinaloa, México. Para cualquier asunto relacionado con
+            este aviso puede contactarnos en:
+            <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+          </p>
+        </section>
+
+        <section class="privacy-section">
+          <h2>2. Datos personales que se recaban</h2>
+          <p>
+            Recabamos los datos que usted nos proporciona voluntariamente al escribirnos
+            por correo electrónico o al agendar una sesión a través de Cal.com:
+          </p>
+          <ul>
+            <li>Nombre</li>
+            <li>Correo electrónico</li>
+            <li>Nombre de empresa (opcional, vía Cal.com)</li>
+            <li>Número de teléfono (opcional, vía Cal.com)</li>
+          </ul>
+          <p>No recabamos datos personales sensibles.</p>
+        </section>
+
+        <section class="privacy-section">
+          <h2>3. Finalidades del tratamiento</h2>
+          <p><strong>Primarias</strong> (necesarias para atender su solicitud):</p>
+          <ul>
+            <li>Responder su solicitud de contacto.</li>
+            <li>Agendar y coordinar la sesión de diagnóstico gratuita.</li>
+          </ul>
+          <p><strong>Secundarias</strong> (opcionales):</p>
+          <ul>
+            <li>Enviarle información sobre los servicios y novedades de OptimIA.</li>
+          </ul>
+          <p>
+            Puede oponerse a las finalidades secundarias en cualquier momento
+            escribiéndonos a <a href={`mailto:${SITE.email}`}>{SITE.email}</a>.
+          </p>
+        </section>
+
+        <section class="privacy-section">
+          <h2>4. Transferencias de datos</h2>
+          <p>
+            Sus datos son tratados por los siguientes encargados, exclusivamente bajo
+            instrucciones de OptimIA y sin fines propios:
+          </p>
+          <ul>
+            <li><strong>Cal.com</strong> (cal.com) — plataforma de agendamiento de sesiones.</li>
+            <li><strong>Resend</strong> (resend.com) — plataforma de envío de correos electrónicos.</li>
+          </ul>
+          <p>No realizamos transferencias de datos a terceros con fines propios.</p>
+        </section>
+
+        <section class="privacy-section">
+          <h2>5. Derechos ARCO</h2>
+          <p>
+            Usted tiene derecho a <strong>Acceder, Rectificar, Cancelar u Oponerse</strong>
+            al tratamiento de sus datos personales. Para ejercer cualquiera de estos derechos,
+            envíe un correo a <a href={`mailto:${SITE.email}`}>{SITE.email}</a> indicando:
+          </p>
+          <ul>
+            <li>Su nombre completo.</li>
+            <li>El derecho que desea ejercer y los datos a los que se refiere.</li>
+          </ul>
+          <p>Responderemos su solicitud en un plazo máximo de <strong>20 días hábiles</strong>.</p>
+        </section>
+
+        <section class="privacy-section">
+          <h2>6. Cambios al aviso de privacidad</h2>
+          <p>
+            Cualquier modificación a este aviso se publicará en esta misma página.
+            Le recomendamos revisarla periódicamente.
+          </p>
+        </section>
+      </article>
+    </div>
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .privacy-page {
+    padding: 8rem 1.5rem 6rem;
+    min-height: 100svh;
+  }
+
+  .privacy-container {
+    max-width: 720px;
+    margin: 0 auto;
+  }
+
+  .privacy-back {
+    display: inline-block;
+    color: var(--color-slate);
+    text-decoration: none;
+    margin-bottom: 2.5rem;
+    transition: color 0.2s ease;
+  }
+  .privacy-back:hover { color: var(--color-navy); }
+
+  .privacy-title {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+    line-height: 1.15;
+    letter-spacing: -0.02em;
+    color: var(--color-navy);
+    margin-bottom: 0.5rem;
+  }
+
+  .privacy-meta {
+    color: var(--color-muted);
+    margin-bottom: 3rem;
+  }
+
+  .privacy-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--color-border);
+  }
+  .privacy-section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+  }
+
+  .privacy-section h2 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 1.125rem;
+    color: var(--color-navy);
+    margin-bottom: 1rem;
+  }
+
+  .privacy-section p {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-body-text);
+    margin-bottom: 0.75rem;
+  }
+  .privacy-section p:last-child { margin-bottom: 0; }
+
+  .privacy-section ul {
+    margin: 0.75rem 0 0.75rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+
+  .privacy-section li {
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-body-text);
+  }
+
+  .privacy-section a {
+    color: var(--color-coral);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+  }
+  .privacy-section a:hover { color: var(--color-navy); }
+</style>
