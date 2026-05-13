@@ -7,7 +7,7 @@
 
 ## Contexto
 
-OptimIA es una consultoría de optimización operativa con IA para PyMEs en LATAM, con sede en Culiacán, Sinaloa, México. La landing page actualmente no tiene formularios propios; la única captación de datos ocurre cuando un usuario escribe voluntariamente a hola@optimia.com. Resend se usa como plataforma de envío de correos transaccionales/respuestas.
+OptimIA es una consultoría de optimización operativa con IA para PyMEs en LATAM, con sede en Culiacán, Sinaloa, México. La landing page no tiene formularios propios; los datos se recaban cuando el usuario escribe a hola@optimia.com o agenda una sesión vía Cal.com. Resend se usa como plataforma de envío de correos transaccionales/respuestas.
 
 La empresa no está formalmente constituida, por lo que el responsable se identifica como "OptimIA".
 
@@ -30,9 +30,11 @@ La empresa no está formalmente constituida, por lo que el responsable se identi
 - **Domicilio:** Culiacán, Sinaloa, México
 
 ### 2. Datos personales que se recaban
-Solo los que el usuario proporciona voluntariamente al escribir a hola@optimia.com:
+Los que el usuario proporciona voluntariamente al escribir a hola@optimia.com o al agendar una sesión en Cal.com:
 - Nombre
 - Correo electrónico
+- Nombre de empresa (opcional, vía Cal.com)
+- Número de teléfono (opcional, vía Cal.com)
 
 No se recaban datos sensibles.
 
@@ -47,7 +49,12 @@ No se recaban datos sensibles.
 El titular puede oponerse a las finalidades secundarias en cualquier momento escribiendo a hola@optimia.com.
 
 ### 4. Transferencias de datos
-Los datos son tratados por **Resend** (resend.com) exclusivamente como encargado del envío de correos electrónicos. Resend actúa bajo instrucciones de OptimIA y no es responsable independiente de los datos. No se realizan transferencias a terceros con fines propios.
+Los datos son tratados por los siguientes encargados, bajo instrucciones de OptimIA y sin fines propios:
+
+- **Cal.com** (cal.com) — plataforma de agendamiento de sesiones
+- **Resend** (resend.com) — plataforma de envío de correos electrónicos
+
+No se realizan transferencias a terceros con fines propios.
 
 ### 5. Derechos ARCO
 El titular puede ejercer sus derechos de **Acceso, Rectificación, Cancelación y Oposición** enviando un correo a hola@optimia.com con:
@@ -87,4 +94,4 @@ Cualquier modificación se publicará en esta misma página. Se recomienda revis
 - Cláusula GDPR (no hay audiencia UE identificada)
 - Banner de cookies (no hay cookies de rastreo)
 - Formulario de ejercicio de derechos ARCO embebido
-- Mención a Cal.com (el enlace es placeholder, se actualizará cuando se active)
+- Cláusula específica sobre política de privacidad de Cal.com o Resend (se remite a sus propios avisos)
