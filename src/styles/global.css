@@ -243,7 +243,7 @@ body {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(255,255,255,0.98);
-  z-index: 99;
+  z-index: 200;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -442,22 +442,48 @@ body {
 }
 
 @media (max-width: 480px) {
-  .hero-visual { height: 280px; }
-  .metric { min-width: 130px; padding: 0.875rem; }
+  .hero-visual { height: auto; }
+
+  .hero-visual-inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.625rem;
+  }
+
+  .hero-visual .bg-blob { display: none; }
+
+  .metric {
+    position: static;
+    min-width: 0;
+    padding: 0.875rem;
+  }
+
+  .metric-1, .metric-2, .metric-3, .metric-optimized {
+    top: auto; left: auto; right: auto; bottom: auto;
+  }
+
   .metric-value { font-size: 1.375rem; }
+
+  .progress-container {
+    position: static;
+    transform: none;
+    width: auto;
+    grid-column: 1 / -1;
+    order: 5;
+  }
 }
 
 /* ─── Problema ──────────────────────────────────────────────────────── */
 .section-problema {
   background: #F7F8FA;
-  padding: 6rem 1.5rem;
+  padding: 6rem 0;
 }
 
 .problem-grid {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
   gap: 1.5rem;
 }
 
@@ -489,7 +515,7 @@ body {
 
 /* ─── Método / Timeline ─────────────────────────────────────────────── */
 .section-metodo {
-  padding: 6rem 1.5rem;
+  padding: 6rem 0;
 }
 
 .timeline {
@@ -561,14 +587,14 @@ body {
 /* ─── Servicios ─────────────────────────────────────────────────────── */
 .section-servicios {
   background: #F7F8FA;
-  padding: 6rem 1.5rem;
+  padding: 6rem 0;
 }
 
 .servicios-grid {
   max-width: 1200px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(260px, 100%), 1fr));
   gap: 1.5rem;
 }
 
@@ -610,7 +636,7 @@ body {
 
 /* ─── Seguridad ─────────────────────────────────────────────────────── */
 .section-seguridad {
-  padding: 6rem 1.5rem;
+  padding: 6rem 0;
 }
 
 .seguridad-question {
@@ -730,13 +756,30 @@ body {
 }
 
 @media (max-width: 768px) {
-  .seguridad-grid { grid-template-columns: 1fr; }
+  .seguridad-grid {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    gap: 1rem;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+    padding: 0.25rem 1.5rem 1.25rem;
+    scrollbar-width: none;
+  }
+
+  .seguridad-grid::-webkit-scrollbar { display: none; }
+
+  .seguridad-card {
+    flex: 0 0 min(300px, 80vw);
+    scroll-snap-align: start;
+  }
 }
 
 /* ─── Revisión humana ───────────────────────────────────────────────── */
 .section-revision {
   background: #F7F8FA;
-  padding: 6rem 1.5rem;
+  padding: 6rem 0;
 }
 
 .revision-flow {
@@ -845,7 +888,7 @@ body {
 
 /* ─── Caso SyqueX ───────────────────────────────────────────────────── */
 .section-caso {
-  padding: 6rem 1.5rem;
+  padding: 6rem 0;
   text-align: center;
 }
 
@@ -1057,4 +1100,31 @@ body {
 /* ─── Scroll reveal default state (hidden before GSAP takes over) ── */
 @media (prefers-reduced-motion: no-preference) {
   .gsap-hidden { opacity: 0; }
+}
+
+/* ─── CTA button full-width on all mobile (overflows up to ~430px) ─ */
+@media (max-width: 480px) {
+  .cta-card .btn {
+    width: 100%;
+    justify-content: center;
+    white-space: normal;
+  }
+}
+
+/* ─── Very narrow viewports (Galaxy Fold, ≤380px) ──────────────── */
+@media (max-width: 380px) {
+  .hero-cta-group .btn {
+    width: 100%;
+    justify-content: center;
+    white-space: normal;
+  }
+
+  .counter-before,
+  .counter-after {
+    font-size: 2.75rem;
+  }
+
+  .nav-mobile a {
+    font-size: 1.25rem;
+  }
 }
