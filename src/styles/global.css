@@ -1088,6 +1088,71 @@ body {
   .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
 }
 
+
+/* ─── WhatsApp ──────────────────────────────────────────────────────── */
+.btn-whatsapp {
+  background: #25D366;
+  color: #ffffff;
+  box-shadow: 0 2px 12px rgba(37, 211, 102, 0.3);
+}
+.btn-whatsapp:hover {
+  background: #1ebe57;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.4);
+  transform: translateY(-1px);
+}
+
+.cta-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.875rem;
+  margin-bottom: 0;
+}
+
+/* Floating button — mobile first: circle */
+.wa-float {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 300;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #25D366;
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+  transition: background 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+}
+.wa-float:hover {
+  background: #1ebe57;
+  box-shadow: 0 6px 28px rgba(37, 211, 102, 0.55);
+  transform: translateY(-2px);
+}
+
+.wa-float-text { display: none; }
+
+/* Desktop: expand to pill with text */
+@media (min-width: 481px) {
+  .wa-float {
+    width: auto;
+    height: auto;
+    border-radius: 999px;
+    padding: 0.75rem 1.25rem;
+    gap: 0.5rem;
+  }
+  .wa-float-text {
+    display: inline;
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    white-space: nowrap;
+  }
+}
+
 /* ─── Decorative background elements ────────────────────────────────── */
 .bg-blob {
   position: absolute;
